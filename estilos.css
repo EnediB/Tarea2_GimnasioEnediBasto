@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 480px) {
+  .ancho {
+    max-width: 480px;
+    margin: auto;
+  }
+
+  body {
+    font-family: "Arimo", sans-serif;
+  }
+
+  .rojo{
+    color: #ff4048;
+  }
+
+  .negritas{
+    font-weight: bold;
+  }
+
+  .gris{
+    color: gray;
+  }
+
+  .blanco{
+    color: white;
+  }
+
+  .cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .logo1 {
+    max-width: 200px;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .logo1 img {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    background-color: #ff4048;
+    padding-bottom: 10px;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px #ff4048 solid;
+    border-radius: 5px;
+  }
+
+  .menu ul li {
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px transparent solid;
+    border-bottom: 2px white dotted;
+    color: white;
+  }
+
+  .menu.abrirmenu {
+    width: 100%;
+  }
+
+  .barras {
+    display: block;
+    text-decoration: none;
+    color: #ff4048;
+    font-size: 35px;
+    padding-right: 20px;
+  }
+
+  /* responsiveslide css */
+
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+  }
+
+  /*  fin */
+
+  .callbacks_container {
+    position: relative;
+    margin: auto;
+  }
+
+  .callbacks_container img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .callbacks_container ul {
+    margin: 0px;
+  }
+
+  .caption {
+    position: absolute;
+    z-index: 2;
+    text-align: right;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px #333;
+    color: #fff;
+    left: 15%;
+    top: 65%;
+    background-color: rgba(51, 51, 51, 0.8);
+    width: 350px;
+    padding: 20px 35px;
+  }
+
+  .callbacks_nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    height: 60px;
+    width: 30px;
+    background: rgba(0, 0, 0, 0.726) url("imagenes/flechas.png") no-repeat left
+      top;
+    margin-top: -35px;
+  }
+
+  .callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+  }
+
+  .titulo{
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .linea{
+    background-color: black;
+    width: 90px;
+    height: 8px;
+    margin-left: 180px;
+    margin-top: 10px;
+    border: none;
+  }
+
+  .servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+
+  .servicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 50px;
+    max-width: 350px;
+    height: 300px;
+    border: 2px #ccc solid;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+
+  .icono{
+    border: 2px #ccc solid;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .icono i{
+    font-size: 50px;
+    color: #ff4048;
+  }
+
+  .galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+  .galeria2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .galeria2 a{
+    width: 50%;
+    height: 180px;
+  }
+
+  .galeria2 figure{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .galeria2 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .galeria3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .galeria3 a{
+    width: 50%;
+    height: 180px;
+  }
+
+  .galeria3 figure{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .galeria3 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .parrallaxs{
+    background-image: url(imagenes/foto_parallaxs.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .parrallaxs::before{
+    content: "";
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+  .info{
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 400px;
+    width: 100%;
+    padding-right: 60px;
+  }
+
+  .info p{
+    font-size: 50px;
+    text-align: right;
+    text-shadow: 0px 0px 5px black;
+  }
+
+  .info a{
+    text-decoration: none;
+    color: white;
+    border: 1px #ff4048 solid;
+    background-color: #ff4048;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+
+  .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 2px #ff4048 solid;
+    border-radius: 5px;
+    height: 150px;
+  }
+
+
+  .icono2 i{
+    font-size: 30px;
+    height: 20px;
+    padding: 10px;
+  }
+
+  #subir {
+    font-size: 40px;
+    position: fixed;
+    z-index: 30;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #333;
+  }
+
+}

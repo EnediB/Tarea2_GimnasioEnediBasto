@@ -1,0 +1,28 @@
+//Funcion para desplegar el menu
+$("#boton").click(function(){
+    $("#cajamenu").slideToggle();
+})
+
+// Funcion para desplazamiento de los vinculos
+$(".btn_ancla").click(function () {
+  var ancla = $(this).attr("href");
+  $("html,body").animate(
+    {
+      scrollTop: $(ancla).offset().top,
+    },
+    1000
+  );
+  $("#contenedormenu").toggleClass("abrirmenu");
+});
+
+// Funcion para el boton subir
+$(document).ready(function () {
+    $("#subir").click(function () {
+      $("html,body").animate(
+        {
+          scrollTop: "0px",
+        },
+        1000
+      );
+    });
+  });
